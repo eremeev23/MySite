@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <title>Eremeev</title>
+</head>
+
+<body>
+    <header class='header'>
+        <nav class="nav">
+            <a href="index.html" class="nav__logo">|Eremeev MA|</a>
+            <ul class="nav__ul">
+                <li><button class="li__a home__li active" id="main-btn">Home</button></li>
+                <li><button class="li__a projects__li" id="project-btn">Projects</button></li>
+                <li><button class="li__a contact__li" id="contacts-btn">Contacts</button></li>
+                <div class="bubble"></div>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main-section" id="main">
+            <div class="container">
+                <p class="about"><img class="me" src="img/photo.png" alt="">Привет! Меня зовут Максим. Мне 27 лет. Я
+                    начинающий frontend-разработчик. Закончил
+                    ПГУПС, факультет
+                    автоматики и интеллектуальных технологий. Работал в ОАО "РЖД" 5 лет и решил, что это не мой путь.
+                    Так я наткнулся на программирование, где меня заинтересовала web-разработка, а именно ее
+                    frontend-часть. На этой странице Вы можете ознакомиться с моими первыми проектами и найти мои
+                    контакты, чтобы связаться со мной.</p>
+                <div>
+                    <img class="img-man" src="img/—Pngtree—portraits creative design_1438117.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="projects-section" id='projects'>
+            <div class="conteiner">
+                <div class="slider">
+                    <div class="item">
+                        <div class="name">
+                            <h1><b>1) Todo List (pure javascript)</b></h1>
+                            <h1>Dark mode</h1>
+                        </div>
+                        <img src="img/Todo.png" alt="Todo List">
+                    </div>
+                    <div class="item">
+                        <h1><b>2) Dark Analog Clock</b></h1>
+                        <img src="img/clock.png" alt="Clock">
+                    </div>
+                    <div class="item">
+                        <h1><b>3) Randomizer</b></h1>
+                        <img src="img/randomizer.png" alt="Randomizer">
+                    </div>
+                    <a class="previous" onclick="previousSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contacts">
+            <ul class="links-ul">
+                <li class="list">
+
+                    <a href="https://github.com/maxon32" class="links" target="_blank"><i class="bi bi-github github"
+                            style="font-size: 4rem;">
+                            <b>Git</b></i></a>
+                </li>
+
+                <li class="list">
+                    <a href="https://www.instagram.com/eremeev23/" class="links inst-link" target="_blank"><i
+                            class="bi bi-instagram instagram" style="font-size: 4rem;"></i> <b>Instagram</b></a>
+                </li>
+
+
+                <li class="list">
+                    <a href="https://vk.com/eremeev23" class="links vk-link" target="_blank"><i class="fab fa-vk"
+                            style="font-size: 4rem;"></i> <b>VK</b></a>
+                </li>
+            </ul>
+            <ul class="links-ul">
+                <li class="list">
+                    <a href="https://wa.me/79052047245" class="links wa-link" target="_blank"><i class="fab fa-whatsapp"
+                            style="font-size: 4rem;"></i> <b>WhatsApp</b></a>
+                </li>
+                <li class="list">
+                    <a href="https://t.me/maxon_32" class="links telegram-link" target="_blank"><i
+                            class="fab fa-telegram-plane" style="font-size: 4rem;"></i> <b>Telegram</b></a>
+                </li>
+                <li class="list">
+                    <a href="tel: +79052047245" class="links phone-link" target="_blank"><i class="fas fa-phone"></i>
+                        <b>+7 (905) 204 72 45</b></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>© 2021 Maxim Eremeev. All Rights Reserved.</footer>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
